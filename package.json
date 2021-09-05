@@ -1,6 +1,6 @@
 {
   "name": "adonis-message-validation-generator",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "adonis for message validation generator",
   "main": "index.js",
   "scripts": {
