@@ -75,7 +75,7 @@ const rules = {
   password: 'required'
 }
 
-const validation = await validateAll(request.all(), rules, Object.assign(validatorMessage(this.rules), ...))
+const validation = await validateAll(request.all(), rules, Object.assign(validatorMessage(rules), ...))
 
 if (validation.fails()) {
   return validation.messages()
