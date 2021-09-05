@@ -95,6 +95,24 @@ const messageValidation = require('adonis-message-validation-generator')
 validatorMessage(rules)
 ```
 
+Example validation json 
+```json
+{
+  "required": "The { attribute } field is required.",
+  "email": "The { attribute } must be a valid email address.",
+  "exists": "The selected { attribute } is unavailable.",
+  "url": "The { attribute } format is invalid.",
+  "confirmed": "The { attribute } confirmation does not match.",
+  "integer": "The { attribute } must be an integer.",
+  "date": "The { attribute } is not a valid date.",
+  "boolean": "The { attribute } field must be true or false.",
+  "string": "The { attribute } must be a string.",
+  "unique": "The { attribute } has already been taken.",
+  "number": "The { attribute } must be a number.",
+  "alpha": "The { attribute } may only contain letters."
+}
+```
+
 ## License
 Copyright (c) 2021
 
