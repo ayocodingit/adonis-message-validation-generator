@@ -23,6 +23,7 @@ const validatorMessage = (rules) => {
   for (const property in rules) {
     messages = validatorMapping(rules[property].split('|'), property, messages)
   }
+
   return messages
 }
 
@@ -33,5 +34,8 @@ const validatorMapping = (rules, property, messages) => {
       messages[`${property}.${key}`] = formatMessage(`validation.${key}`, { attribute: property })
     }
   }
+
   return messages
 }
+
+module.export = validatorMessage
