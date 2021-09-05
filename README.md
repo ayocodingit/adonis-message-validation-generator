@@ -95,11 +95,6 @@ const messageValidation = require('adonis-message-validation-generator')
 validatorMessage(rules)
 ```
 
-Copy Resources Example
-```bash
-cp ./node_modules/adonis-message-validation-generator/resources/locales/* ./resources/locales/
-```
-
 ## License
 Copyright (c) 2021
 
