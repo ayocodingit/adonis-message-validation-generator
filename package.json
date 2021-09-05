@@ -1,0 +1,26 @@
+{
+  "name": "adonis-message-validation-generator",
+  "version": "1.0.0",
+  "description": "adonis for message validation generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayocodingit/adonis-message-validation-generator.git"
+  },
+  "keywords": [
+    "adonis",
+    "validation",
+    "message",
+    "generator",
+    "lucid"
+  ],
+  "author": "ayocodingit",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ayocodingit/adonis-message-validation-generator/issues"
+  },
+  "homepage": "https://github.com/ayocodingit/adonis-message-validation-generator#readme"
+}
