@@ -2,7 +2,7 @@
 
 Adonis for message validation generator.
 
-## Limit Validation Tranlator 
+## Limit Rules Validation 
 - required
 - email
 - exists
