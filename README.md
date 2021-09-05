@@ -34,7 +34,7 @@ get messages () {
 ```
 #### After
 ```javascript
-const messageValidation = require('adonis-message-validation-generator')
+const validatorMessage = require('adonis-message-validation-generator')
 
 // can be combined with other messages
 get messages () {
@@ -66,7 +66,7 @@ if (validation.fails()) {
 ```
 #### After
 ```javascript
-const messageValidation = require('adonis-message-validation-generator')
+const validatorMessage = require('adonis-message-validation-generator')
 
 const { validateAll } = use('Validator')
 
@@ -90,7 +90,7 @@ npm i adonis-message-validation-generator --save
 
 Use Validator
 ```javascript
-const messageValidation = require('adonis-message-validation-generator')
+const validatorMessage = require('adonis-message-validation-generator')
 
 validatorMessage(rules)
 ```
