@@ -1,8 +1,8 @@
 # Adonis Message Validation Generator
 
-adonis for message validation generator.
+Adonis for message validation generator.
 
-## limit validation translate: 
+## Limit Validation Tranlator: 
 - required
 - email
 - exists
@@ -17,8 +17,8 @@ adonis for message validation generator.
 - alpha
 
 Before using this package, it is mandatory to install it first : 
-- **Validator** - [Validator](https://legacy.adonisjs.com/docs/4.1/validator)
-- **Internationalization** - [Internationalization](https://legacy.adonisjs.com/docs/4.1/internationalization) 
+**Validator** - [Validator](https://legacy.adonisjs.com/docs/4.1/validator)
+**Internationalization** - [Internationalization](https://legacy.adonisjs.com/docs/4.1/internationalization) 
 
 ### class validator
 #### Before
