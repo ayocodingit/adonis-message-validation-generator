@@ -2,7 +2,7 @@
 
 Adonis for message validation generator.
 
-## Limit Validation Tranlator: 
+## Limit Validation Tranlator 
 - required
 - email
 - exists
@@ -16,11 +16,10 @@ Adonis for message validation generator.
 - number
 - alpha
 
-Before using this package, it is mandatory to install it first : 
+## Before using this package, it is mandatory to install it first 
 - **Validator** - [Validator](https://legacy.adonisjs.com/docs/4.1/validator)
 - **Internationalization** - [Internationalization](https://legacy.adonisjs.com/docs/4.1/internationalization) 
 
-### class validator
 #### Before
 ```javascript
 const { formatMessage } = use('Antl')
@@ -43,7 +42,6 @@ get messages () {
 }
 ```
 
-### class controller
 #### Before
 ```javascript
 const { validateAll } = use('Validator')
