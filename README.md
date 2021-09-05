@@ -95,7 +95,15 @@ const messageValidation = require('adonis-message-validation-generator')
 validatorMessage(rules)
 ```
 
-Example validation json 
+Stored inside the resources/locales directory
+```bash
+└── resources
+  └── locales
+      └── en
+        └── validation.json
+```
+
+Examples validation.json
 ```json
 {
   "required": "The { attribute } field is required.",
