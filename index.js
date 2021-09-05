@@ -38,4 +38,4 @@ const validatorMapping = (rules, property, messages) => {
   return messages
 }
 
-module.export = validatorMessage
+module.exports = validatorMessage
