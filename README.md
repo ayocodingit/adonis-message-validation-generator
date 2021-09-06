@@ -1,6 +1,7 @@
 # Adonis Message Validation Generator
 
-Adonis for message validation generator.
+Adonis for message validation generator. This package is made to shorten repetitive code, 
+just like Laravel message validation is generated automatically
 
 ## Limit Rules Validation 
 - required
@@ -20,6 +21,47 @@ Adonis for message validation generator.
 - **Validator** - [Validator](https://legacy.adonisjs.com/docs/4.1/validator)
 - **Internationalization** - [Internationalization](https://legacy.adonisjs.com/docs/4.1/internationalization) 
 
+## How To Use
+Installation
+```bash
+npm i adonis-message-validation-generator --save
+```
+
+Use Validator
+```javascript
+const validatorMessage = require('adonis-message-validation-generator')
+
+validatorMessage(rules)
+```
+
+Stored inside the resources/locales directory
+```bash
+└── resources
+  └── locales
+      ├── en
+      │ ├── ...
+      │ └── validation.json
+      └── fr
+```
+
+Example validation.json
+```json
+{
+  "required": "The { attribute } field is required.",
+  "email": "The { attribute } must be a valid email address.",
+  "exists": "The selected { attribute } is unavailable.",
+  "url": "The { attribute } format is invalid.",
+  "confirmed": "The { attribute } confirmation does not match.",
+  "integer": "The { attribute } must be an integer.",
+  "date": "The { attribute } is not a valid date.",
+  "boolean": "The { attribute } field must be true or false.",
+  "string": "The { attribute } must be a string.",
+  "unique": "The { attribute } has already been taken.",
+  "number": "The { attribute } must be a number.",
+  "alpha": "The { attribute } may only contain letters."
+}
+```
+
 #### Before
 ```javascript
 const { formatMessage } = use('Antl')
@@ -38,7 +80,7 @@ const validatorMessage = require('adonis-message-validation-generator')
 
 // can be combined with other messages
 get messages () {
-  return Object.assign(validatorMessage(this.rules), ...)
+  return validatorMessage(this.rules)
 }
 ```
 
@@ -75,49 +117,10 @@ const rules = {
   password: 'required'
 }
 
-const validation = await validateAll(request.all(), rules, Object.assign(validatorMessage(rules), ...))
+const validation = await validateAll(request.all(), rules, validatorMessage(rules))
 
 if (validation.fails()) {
   return validation.messages()
-}
-```
-
-## How To Use
-Installation
-```bash
-npm i adonis-message-validation-generator --save
-```
-
-Use Validator
-```javascript
-const validatorMessage = require('adonis-message-validation-generator')
-
-validatorMessage(rules)
-```
-
-Stored inside the resources/locales directory
-```bash
-└── resources
-  └── locales
-      └── en
-        └── validation.json
-```
-
-Examples validation.json
-```json
-{
-  "required": "The { attribute } field is required.",
-  "email": "The { attribute } must be a valid email address.",
-  "exists": "The selected { attribute } is unavailable.",
-  "url": "The { attribute } format is invalid.",
-  "confirmed": "The { attribute } confirmation does not match.",
-  "integer": "The { attribute } must be an integer.",
-  "date": "The { attribute } is not a valid date.",
-  "boolean": "The { attribute } field must be true or false.",
-  "string": "The { attribute } must be a string.",
-  "unique": "The { attribute } has already been taken.",
-  "number": "The { attribute } must be a number.",
-  "alpha": "The { attribute } may only contain letters."
 }
 ```
 
